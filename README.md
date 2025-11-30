@@ -8,7 +8,7 @@ Cross-platform rich Audio API for Rust based on [cpal](https://github.com/RustAu
 
 * Built-in `AudioProcessor` API for wrapping `Audio FX`'s or `DSP`
 * Autohandler of different channel count for a specific device. 
-* In-runtime `AudioStream`s layer `(Doesn't depend on [cpal](https://example.com) stream, there's only one main stream for handling `AudioStream`)`.
+* In-runtime `AudioStream`s layer `(Isn't related to cpal stream, there's only one main stream for handling `AudioStream`)`.
 * High-Quality Resample algorithm. `Turn on libsamplerate feature`
 
 ## Requirements
