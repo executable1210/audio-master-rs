@@ -15,9 +15,8 @@ Cross-platform rich Audio API for Rust based on [cpal](https://github.com/RustAu
 
 * C/C++ Compiler for building [libsamplerate](https://github.com/libsndfile/libsamplerate)
 
-## Quick example
+## Sine wave example
 
-Sine wave example
 ```rust
 use audio_master::{
     AudioBuffer, AudioBufferImpl, AudioChannelLayout, AudioMaster, AudioMasterError,
