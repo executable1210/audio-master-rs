@@ -1,0 +1,17 @@
+[package]
+name = "audio-master"
+version = "1.0.0"
+edition = "2024"
+
+[dependencies]
+biquad = "0.5.0"
+cpal = "0.16.0"
+fxhash = "0.2.1"
+num-traits = "0.2.19"
+rustfft = "6.4.1"
+
+[build-dependencies]
+cmake = "0.1.54"
+
+[features]
+libsamplerate = []
