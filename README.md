@@ -1,6 +1,6 @@
 # audio-master-rs
 
-Cross-platform rich Audio API for Rust based on [cpal](https://example.com) and high-quality C library [libsamplerate](https://github.com/libsndfile/libsamplerate).
+Cross-platform rich Audio API for Rust based on [cpal](https://github.com/RustAudio/cpal) and high-quality C library [libsamplerate](https://github.com/libsndfile/libsamplerate).
 
 > **Status:** The project is not stable yet.
 
