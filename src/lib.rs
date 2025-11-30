@@ -18,5 +18,6 @@ pub use audio_master::audio_master::{
     AudioAnalyser, AudioAnalysis, AudioEffect, AudioEffectImpl, AudioEffectState, AudioEffectTrait,
     AudioMaster, AudioMasterError, AudioMasterImpl, AudioProcessor, AudioProcessorImpl,
     AudioStream, AudioStreamContext, AudioStreamFeederTrait, AudioStreamImpl, AudioStreamSettings,
-    AudioStreamState, EffectParamValue, ParamPropDesk
+    AudioStreamState, EffectParamValue, ParamPropDesk,
 };
+pub use resampler::ResamplerQuality;

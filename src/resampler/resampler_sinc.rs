@@ -58,6 +58,11 @@ impl<T: FloatType + 'static> ResamplerImpl<T> for Resampler<T> {
 
     fn process(&mut self, input: &[T], output: &mut [T], src_ratio: f64) -> usize {
         unsafe {
+            if src_ratio == 1.0 {
+                std::ptr::copy_nonoverlapping(input.as_ptr(), output.as_mut_ptr(), input.len());
+                return input.len();
+            }
+
             let channels = self.ch_layout as usize;
             if input.is_empty() {
                 return 0;
