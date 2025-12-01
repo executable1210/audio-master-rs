@@ -137,6 +137,9 @@ impl<T: FloatType + 'static> ResamplerImpl<T> for Resampler<T> {
     /// Set other ResamplerQuality.
     /// Reallocates SRC_STATE
     fn set_quality(&mut self, quality: ResamplerQuality) {
+        if self.quality == quality {
+            return;
+        }
         let new_ksize = quality.to_converter_type() as usize;
 
         self.window = Resampler::alloc_window(new_ksize);

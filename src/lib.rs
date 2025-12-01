@@ -20,4 +20,5 @@ pub use audio_master::audio_master::{
     AudioStream, AudioStreamContext, AudioStreamFeederTrait, AudioStreamImpl, AudioStreamSettings,
     AudioStreamState, EffectParamValue, ParamPropDesk,
 };
+pub use backend::Device;
 pub use resampler::ResamplerQuality;
